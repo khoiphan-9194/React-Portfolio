@@ -65,7 +65,7 @@ code {
 
 #contact
 {
-  background-image: url('../public/wells.webp');
+  background-image: url('./public/wells.webp');
 background-size:100% 70%;
 border: transparent;
   border-radius: 10px;
