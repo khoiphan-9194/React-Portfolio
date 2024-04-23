@@ -67,7 +67,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 ## Walkthrough Video
 
 
-[![Youtube-Walk-Through Video React Portfolio](https://www.youtube.com/watch?v=ii5p-t912ys)
+[![Youtube-Walk-Through Video React Portfolio]](https://www.youtube.com/watch?v=ii5p-t912ys)
 
 
 ## Screenshots
