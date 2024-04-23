@@ -1,6 +1,6 @@
 # React-Portfolio
 react front end, js
-
+https://react-kpportfolio.onrender.com/
 
 ![](https://img.shields.io/badge/Created%20by-Khoi%20Phan%20-yellow?style=for-the-badge)  
 ![](https://img.shields.io/badge/Vite%20React-JS-blue?style=flat-square&logo=npm)  ![](https://img.shields.io/badge/npm%20package-moment-%3CCOLOR%3E?style=flat-square&logo=npm)
@@ -15,13 +15,11 @@ react front end, js
 <br />
 [5.Screenshots](#screenshots)
 <br />
-[6.Tests](#Tests)  
-<br />
-[7.License](#License)  
+[6.License](#License)  
 <br/>
-[8.Submission](#Submission)
+[7.Submission](#Submission)
 <br />
-[9.Questions](#Questions)  
+[8.Questions](#Questions)  
 <br />
 ## User Story
 
@@ -32,36 +30,55 @@ SO THAT my website can handle large amounts of unstructured data
 ```
 
 ## Description:
-This is a set of API for a social network that uses a MongoDB database where users can share their thoughts, react to friends’ thoughts, and create a friend list.
-Start the server and perform Get/Post/Put/Delete routes to the API from Insomnia to see it in action. This program has full CRUD functionality (create, read, update and delete)!
+This portfolio application was developed and designed to showcase my web applications, resume, and skills to potential employers, clients, and interested parties. It was created using React an open sourced JavaScript library for building user interfaces. React was created by Facebook developers and helps simplify the process of building interactive and dynamic user interfaces by providing a component-based structure, efficient rendering through the virtual DOM, and a declarative syntax. It operates via a one page application, but gives the user experience of multiple page functionality.
+As it stands, this application is all front-end. However I will be looking to add a backend framework so that I can receive messages via my contact page. React allows for developer flexibility and seems to still be on the rise in popularity. React offers developers numerous options in choosing other back-end frameworks and middleware options as it is a library focused on the View layer only therefore allowing developers to build UI components leaving the choice of other libraries or tools for additional functionalities open ended.
 
-## Acceptance Criteria:
 
-- When you enter the command to invoke the application then the server is started and the Mongoose models are synced to the MongoDB database.  
-- Testing API GET routes in Insomnia Core for users and thoughts return the data for each of these routes in a formatted JSON
-- Testing API POST, PUT, and DELETE routes in Insomnia Core are able to successfully create, update, and delete users and thoughts
+## Acceptance Criteria
 
-- Testing API POST and DELETE routes in Insomnia Core are able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list.
+```md
+GIVEN a single-page application portfolio for a web developer
+WHEN I load the portfolio
+THEN I am presented with a page containing a header, a section for content, and a footer
+WHEN I view the header
+THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
+WHEN I view the navigation titles
+THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
+WHEN I click on a navigation title
+THEN the browser URL changes and I am presented with the corresponding section below the navigation and that title is highlighted
+WHEN I load the portfolio the first time
+THEN the About Me title and section are selected by default
+WHEN I am presented with the About Me section
+THEN I see a recent photo or avatar of the developer and a short bio about them
+WHEN I am presented with the Portfolio section
+THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repositories
+WHEN I am presented with the Contact section
+THEN I see a contact form with fields for a name, an email address, and a message
+WHEN I move my cursor out of one of the form fields without entering text
+THEN I receive a notification that this field is required
+WHEN I enter text into the email address field
+THEN I receive a notification if I have entered an invalid email address
+WHEN I am presented with the Resume section
+THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
+WHEN I view the footer
+THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
+```
 
-## Walkthrough Videos
+## Walkthrough Video
 
-[get-routes.webm](https://github.com/khoiphan-9194/NoSQL-Social-Network-API/assets/149036903/f906a37c-4d15-4b76-9f1a-a9dff05829ae)
 
-[post-put-delete.webm](https://github.com/khoiphan-9194/NoSQL-Social-Network-API/assets/149036903/dd8b407b-dda6-4925-8540-113a369a8dda)
 
 
 
 ## Screenshots
 
-![Screenshot1](./Assets/create-user.jpg)
+![Screenshot1](./public/s3.jpg)
 
-![Screenshot2](./Assets/get-allusers.jpg)
+![Screenshot2](./public/s2.jpg)
 
-![Screenshot3](./Assets/get-single-user.jpg)
+![Screenshot3](./public/s1.jpg)
 
-![Screenshot4](./Assets/get-allthoughts.jpg)
 
-![Screenshot5](./Assets/wrong-route.jpg)
 
 
 ## Technology:
@@ -70,84 +87,26 @@ Start the server and perform Get/Post/Put/Delete routes to the API from Insomnia
 
     - Javascript
     - Node.js
-    - Express.js
-    - MongoDB
-    - Mongoose
+    - React
+    - DOM
+    - Render Deployment
 ```
 
 ## Installation:
 
-This repo is not to be deployed, if you wanted to, you could by doing the following:  
-1. Download the repo files from the link below
-2. You must have mongoDB installed
-3. Run the following at the command line
+
+To make changes to the code base, clone the repo ([repo](https://github.com/khoiphan-9194/React-Portfolio/)).
+ Run the following at the command line
 ```
     - npm install
-    - npm run seed
-    - npm run dev 
+    - npm run start
     
 ```
 
-4. Open Insomnia Core to test API routes
-
-## Tests:  
-
-Testing restful API calls with Insomnia Core  
----
-**`/api/users`**
-* `GET` all users
-* `POST` a new user:
-    ```json
-    // example data
-    {
-        "username": "davibeckham",
-        "email": "davibeckham@gmail.com"
-    }
-    ```
----
-**`/api/users/:userid`**
-* `GET` a single user by its `_id` 
-* `PUT` to update a user by its `_id`
-* `DELETE` to remove user by its `_id`
----
-**`/api/users/:userId/friends/:friendId`**
-* `POST` to add a new friend to a user's friend list
-* `DELETE` to remove a friend from a user's friend list
----
-**`/api/thoughts`** 
-* `GET` to get all thoughts
-* `POST` to create a new thought
-    ```json
-    // example data
-    {
-    "thoughtText": "let play soccer in the summer",
-    "username": "davibeckham",
-    "userId": "43dzf35820fcb779aa7b118b"
-    }
-    ```
----
-**`/api/thoughts/:thoughtId`**
-* `GET` to get a single thought by its `_id`
-* `PUT` to update a thought by its `_id`
-* `DELETE` to remove a thought by its `_id`
----
-
-**`/api/thoughts/:thoughtId/reactions`**
-
-* `POST` to create a reaction 
-    ```json
-    // example data
-    {
-    "reactionBody":"cool cool",
-    "username":"heomap"
-    }
-    ```
----
-**`/api/thoughts/:thoughtId/reactions/:reactionId`**
-* `DELETE` remove a reaction by the `reactionId` 
+Users can also feel free to access the live application directly by visiting the render link ([Khoi Phan Portfolio](https://react-kpportfolio.onrender.com/)).
 
 ## Submission:
- [KhoiPhan-Github repository](https://github.com/khoiphan-9194/NoSQL-Social-Network-API)
+ [KhoiPhan-Github repository](https://github.com/khoiphan-9194//React-Portfolio)
 
 ## License
 [![License: MIT](https://img.shields.io/badge/license-MIT-red)](https://opensource.org/licenses/MIT)
