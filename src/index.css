@@ -12,7 +12,7 @@
   --title-font: 'Roboto Slab', serif;
 
  
-  background-image: url('./public/main-background.gif');
+  background-image: url('/assets/img/main-background.gif');
 
   
 }
