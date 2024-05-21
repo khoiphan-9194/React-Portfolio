@@ -11,7 +11,8 @@
   --main-font: 'Roboto', sans-serif;
   --title-font: 'Roboto Slab', serif;
 
-  background-image: url('https://i.stack.imgur.com/kx8MT.gif');
+ 
+  background-image: url('./public/main-background.gif');
 
   
 }

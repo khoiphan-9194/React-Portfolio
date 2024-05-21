@@ -9,7 +9,7 @@ function Portfolio() {
       name: 'Weather Dashboard',
       description: 'This application will give a 5 day forecast',
       link: 'https://khoiphan-9194.github.io/Weather-Dashboard/',
-      img: '../../public/weather.webp',
+      img: './public/weather.webp',
       img_description: 'Weather Forecast Display'
     },
     {
@@ -17,7 +17,7 @@ function Portfolio() {
       name: 'Workday Scheduler',
       description: 'This will set up a schedule for a day',
       link: 'https://khoiphan-9194.github.io/Weather-Dashboard/',
-      img: '../../public/workday-schedule.jpg',
+      img: './public/workday-schedule.jpg',
       img_description: 'Boat on Calm Water/'
     },
     {
@@ -25,7 +25,7 @@ function Portfolio() {
       name: 'Tech Blog',
       description: 'user can create a blog',
       link: 'https://khoiphan-9194.github.io/Weather-Dashboard/',
-      img: '../../public/tech-blog.jpeg',
+      img: './public/tech-blog.jpeg',
       img_description: 'Boat on Calm Water/'
     },
     {
@@ -33,7 +33,7 @@ function Portfolio() {
       name: 'Music Festival Booking App',
       description: 'user can book a festival event',
       link: 'https://khoiphan-9194.github.io/Weather-Dashboard/',
-      img: '../public/music-festival.jpeg',
+      img: './public/music-festival.jpeg',
       img_description: 'Boat on Calm Water/'
     },
     {
@@ -41,7 +41,7 @@ function Portfolio() {
       name: 'Note Taker',
       description: 'user can create their own notes',
       link: 'https://khoiphan-9194.github.io/Weather-Dashboard/',
-      img: '../../public/note-taker.jpg',
+      img: './public/note-taker.jpg',
       img_description: 'Boat on Calm Water/'
     },
     {
@@ -49,7 +49,7 @@ function Portfolio() {
       name: 'Pop Quiz',
       description: 'giving a quiz',
       link: 'https://khoiphan-9194.github.io/Weather-Dashboard/',
-      img: '../../public/quiz.jpeg',
+      img: './public/quiz.jpeg',
       img_description: 'Boat on Calm Water/'
     },
   ];
